@@ -1,0 +1,404 @@
+/* General */
+body {
+    background-image: url('backgroundB.png') ;  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+input[type=text], .btn-add, input[type=password], .btn-update, textarea, .titleNote[type=text] {
+    width: 60vw;
+    height: 10vh;
+
+    margin: 2% 0;
+    display: inline;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+@media  (min-width: 1200px) {
+    .input[type=text], .btn-add, input[type=password], .btn-update, textarea, .titleNote[type=text] {
+        font-size: 100%;
+    }
+}
+
+@media  (min-width: 1600px) {
+    .input[type=text], .btn-add, input[type=password], .btn-update, textarea, .titleNote[type=text] {
+        font-size: 150%;
+    }
+}
+
+@media  (min-width: 2400px) {
+    .input[type=text], .btn-add, input[type=password], .btn-update, textarea, .titleNote[type=text] {
+        font-size: 200%;
+    }
+}
+
+@media  (min-width: 3400px) {
+    .input[type=text], .btn-add, input[type=password], .btn-update, textarea, .titleNote[type=text] {
+        font-size: 400%;
+    }
+}
+
+@media  (min-width: 4000px) {
+    .input[type=text], .btn-add, input[type=password], .btn-update, textarea, .titleNote[type=text] {
+        font-size: 500%;
+    }
+}
+
+@media  (max-width: 700px) {
+    .btn-add, .btn-update{
+        font-size: 60%;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+    }
+}
+
+@media  (max-width: 400px) {
+    .btn-add, .btn-update{
+        font-size: 30%;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+    }
+}
+
+/* Menu */
+#MenuBar {
+    background-color: black;
+    text-align:center;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 10vh;
+}
+
+@media  (max-width: 1400px) {
+    #MenuBar { 
+        height: 15vh;
+    }
+}
+
+@media  (max-width: 1200px) {
+    #MenuBar { 
+        height: 20vh;
+    }
+}
+
+
+@media  (max-width: 800px) {
+    #MenuBar { 
+        height: 40vh;
+    }
+}
+
+
+@media  (max-width: 400px) {
+    #MenuBar { 
+        height: 60vh;
+    }
+}
+
+#MenuBar * {
+    padding: 10px;
+}
+
+.welcomeMessage {
+    width: 96%;
+    text-align: left;
+    color: white;
+    font-size: 200%;
+}
+
+
+@media  (min-width: 2600px) {
+    .welcomeMessage {
+        font-size: 400%;
+    }
+}
+
+@media  (min-width: 3400px) {
+    .welcomeMessage {
+        font-size: 700%;
+    }
+}
+
+@media  (min-width: 4000px) {
+    .welcomeMessage {
+        font-size: 1000%;
+    }
+}
+
+@media  (max-width: 800px) {
+    .welcomeMessage { 
+        font-size: 200%;
+    }
+}
+
+@media  (max-width: 400px) {
+    .welcomeMessage { 
+        font-size: 150%;
+    }
+}
+
+.disconnectForm {
+    color:black;
+    height: 75px;
+}
+
+.disconnectBtn {
+    background-color: rgb(208, 208, 43);
+    color:white;
+    height: 8vh;
+    width: 16vw;
+    font-size: 100%;
+}
+
+
+@media  (min-width: 2000px) {
+    .disconnectBtn  { 
+        height: 9vh;
+        font-size: 300%;
+    }
+}
+
+@media  (min-width: 3400px) {
+    .disconnectBtn  { 
+        height: 9vh;
+        font-size: 600%;
+    }
+}
+
+
+@media  (min-width: 3800px) {
+    .disconnectBtn  { 
+        height: 9vh;
+        font-size: 900%;
+    }
+}
+
+
+@media  (max-width: 1400px) {
+    .disconnectBtn  { 
+        height: 12vh;
+    }
+}
+
+@media  (max-width: 1200px) {
+    .disconnectBtn  { 
+        height: 16vh;
+        font-size: 85%;
+    }
+}
+
+
+@media  (max-width: 800px) {
+    .disconnectBtn { 
+        height: 34vh;
+        font-size: 65%;
+    }
+}
+
+
+@media  (max-width: 400px) {
+    .disconnectBtn  { 
+        height: 50vh;
+        font-size: 50%;
+    }
+}
+
+.disconnectBtn:hover {
+    background-color: rgb(118, 118, 30);;
+}
+
+/* Main Text Input */
+.titleNoteText {
+    color: white;
+    font-size: 400%;
+}
+
+
+@media  (max-width: 800px) {
+    .titleNoteText {
+        font-size: 150%;
+    }
+}
+
+@media  (max-width: 400px) {
+    .titleNoteText {
+        font-size: 100%;
+    }
+}
+
+@media  (min-width: 2000px) {
+    .titleNoteText {
+        font-size: 800%;
+    }
+}
+
+.desc {
+    resize: none;
+    width: 60vw;
+    height: 60vh;
+    margin-left: 5%;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1; 
+}
+
+:-ms-input-placeholder { 
+    color: white;
+}
+
+::-ms-input-placeholder { 
+    color: white;
+}
+
+/*List of notes*/
+#Notes {
+    display: flex;
+}
+
+.ListNoteTitle {
+    font-size: 200%;
+    color: white;
+}
+
+@media  (max-width: 800px) {
+    .ListNoteTitle {
+        font-size: 150%;
+    }
+}
+
+@media  (max-width: 400px) {
+    .ListNoteTitle {
+        font-size: 100%;
+    }
+}
+
+@media  (min-width: 2000px) {
+    .ListNoteTitle {
+        font-size: 800%;
+    }
+}
+
+#list_note{
+    border: 5px solid black;
+    background-color: rgba(0, 0, 0, 0.4); ;
+    width: 30vw;
+    height: 85vh;
+    margin-top: 1%;
+    margin-right: 1%;
+    list-style-type: none;
+    list-style-position: 0px;
+    overflow-y: scroll;
+    overflow-x: none;
+}
+
+#list_note *:not(.ListNoteTitle) {
+    margin: 1%;
+    color: white;
+    font-size: 100%;
+}
+
+@media  (max-width: 800px) {
+    #list_note *:not(.ListNoteTitle) {
+        font-size: 50%;
+    }
+}
+
+@media  (max-width: 400px) {
+    #list_note *:not(.ListNoteTitle) {
+        font-size: 25%;
+    }
+}
+
+@media  (min-width: 2000px) {
+    #list_note *:not(.ListNoteTitle) {
+        font-size: 300%;
+    }
+}
+
+.titleNote {
+    width: 150%;
+    margin-left: 5%;
+    color: black;
+}
+
+.noteForm * {
+    margin: 0.5%;
+}
+
+.inputForm {
+    margin-left: 2%;
+}
+
+.note{
+    width: 25vw;
+    border: 2px solid black;
+    background-color: rgb(147, 147, 33);
+}
+
+.note:hover {
+    background-color: rgb(211, 211, 45);
+}
+
+.x_btn {
+    background-color: red;
+}
+
+.x_btn:hover {
+    background-color: darkred;
+}
+
+input[type=submit]:not(.note, .x_btn, .disconnectBtn) {
+    width: 10vw;
+    height: 4vh;
+    background-color: rgb(76, 76, 76);
+    color: white;
+    /*padding: 14px 20px;*/
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover:not(.note, .x_btn, .disconnectBtn) {
+    background-color: rgb(21, 21, 21);
+}
+
+/* Scrollbar of note list*/
+#list_note::-webkit-scrollbar {
+    width: 1vw;
+}
+ 
+#list_note::-webkit-scrollbar-track {
+    background-color: #ffffff;
+    border-radius: 100px;
+}
+ 
+#list_note::-webkit-scrollbar-thumb {
+    background-color: #2d2d2d;
+    border-radius: 100px;
+}
+
+.desc::-webkit-scrollbar {
+    width: 1.1vw;
+}
+ 
+.desc::-webkit-scrollbar-track {
+    background-color: #ffffff;
+    border-radius: 100px;
+}
+ 
+.desc::-webkit-scrollbar-thumb {
+    background-color: #2d2d2d;
+    border-radius: 100px;
+}
+

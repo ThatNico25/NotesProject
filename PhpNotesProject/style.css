@@ -1,0 +1,157 @@
+/* Login */
+body {
+    background-image: url('backgroundB.png') ;  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#title {
+    text-align: center;
+    color: white;
+    font-size: 800%;
+}
+
+#id_form {
+    background-color: black;
+    width: 30%;
+    padding: 2%;
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-top:5%;
+}
+
+@media (max-width: 760px) {
+    #id_form {
+        background-color: black;
+        width: 70%;
+        padding: 2%;
+        color: white;
+        text-align: center;
+        margin: auto;
+        margin-top:5%;
+    }
+}
+
+#id_form  *:not(.loginText){
+    margin: 4px;
+    font-size: 120%;
+}
+
+.loginText {
+    font-size: 90px;
+    margin: 1%;
+    margin-bottom: 10%;
+}
+
+#user,#pass {
+    width: 100%;
+    font-size: 120px;
+    background-color: rgb(208, 208, 43);
+    color: white;
+}
+
+.btn-login, .btn-register {
+    background-color: rgb(208, 208, 43);
+    color: white;
+}
+
+input[type=text], .btn-login,   input[type=password], .btn-register {
+    width: 47.5%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(118, 118, 30);;
+  }
+
+::placeholder {
+    color: white;
+    opacity: 1; 
+  }
+  
+  :-ms-input-placeholder { 
+   color: white;
+  }
+  
+  ::-ms-input-placeholder { 
+   color: white;
+  }
+
+  #author {
+    text-align: center;
+    color: white;
+    font-size: 200%;
+    margin-top: 7%;
+}
+
+/* Main Page */
+
+#MenuBar {
+    background-color: black;
+    text-align:center;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+#MenuBar * {
+    padding: 10px;
+}
+
+.welcomeMessage {
+    width: 96%;
+    text-align: left;
+    color: white;
+}
+
+.disconnectForm {
+    color:black;
+    height: 75px;
+}
+
+.disconnectBtn {
+    color:black;
+    height: 75px;
+}
+
+#Notes {
+    display: flex;
+}
+
+#list_note{
+    border: 2px solid black;
+    width: 200px;
+    height: 800px;
+    margin-right: 1%;
+    list-style-type: none;
+}
+
+#list_note * {
+    margin: 1%;
+}
+
+.titleNote {
+    width: 1580px;
+}
+
+.desc {
+    resize: none;
+    width: 1580px;
+    height: 700px;
+}
+
+.noteForm * {
+    margin: 0.25%;
+}
+
+.note{
+    width: 160px;
+    border: 2px solid black;
+}
